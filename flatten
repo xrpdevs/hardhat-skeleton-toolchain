@@ -1,0 +1,4 @@
+#!/bin/sh
+
+npx hardhat flatten | sed 's/\/\/ SPDX-License-Identifier: MIT//g' | sed 's/Sources flattened with hardhat/SPDX-License-Identifier: MIT\n\/\//g' >SFT6.sol
+
